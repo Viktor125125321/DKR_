@@ -34,6 +34,10 @@ public:
 };
 
 // Клас для квадратів
+//є підкласом Quadrilateral 
+//має конструктор, який приймає довжину сторони і передає це значення у конструктор Quadrilateral
+//реалізує методи getArea(), getPerimeter() та getType(),
+//щоб повернути відповідні значення для квадрата
 class Square : public Quadrilateral {
 public:
     Square(double side) : Quadrilateral(side, side, side, side) {}
